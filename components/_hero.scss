@@ -1,0 +1,28 @@
+@use "./mixins";
+
+.hero {
+  @include mixins.grid-style($gap: 1rem);
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  margin-block-start: 15rem;
+  transition: var(--transition-timing) ease-in-out;
+
+  &__title {
+    width: 55.5rem;
+    line-height: 7rem;
+    font-size: var(--hero-title-size);
+    font-weight: var(--font-weight-medium);
+  }
+
+  &__text {
+    margin-block: 2rem 4rem;
+    width: 47rem;
+  }
+
+  &__image {
+    width: 40rem;
+    justify-self: end;
+    height: auto;
+    border-radius: var(--border-box-radius);
+  }
+}

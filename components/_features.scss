@@ -1,0 +1,45 @@
+@use "./mixins";
+
+.features {
+  @include mixins.grid-style($col: 2);
+  justify-self: stretch;
+  justify-items: center;
+  align-items: center;
+
+  &__img {
+    width: 40rem;
+    height: auto;
+    border-radius: var(--border-box-radius);
+  }
+
+  &__content {
+    @include mixins.grid-style($gap: 2.5rem);
+    justify-self: start;
+  }
+
+  &__heading {
+    width: 38rem;
+  }
+
+  &__text {
+    width: 43rem;
+  }
+
+  &__list {
+    @include mixins.flex-style($gap: 2rem);
+    flex-direction: column;
+  }
+
+  &__feature {
+    @include mixins.flex-style($gap: 1rem);
+    align-items: center;
+    &::before {
+      content: "";
+      background-image: url(../images/white-check.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      width: 2.4rem;
+      aspect-ratio: 1/1;
+    }
+  }
+}

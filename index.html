@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>212Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header widthed-section">
+        <div class="hamburger">
+          <input
+            type="checkbox"
+            name="menu"
+            id="menu"
+            class="hamburger__input"
+          />
+          <label for="menu" class="hamburger__label"></label>
+        </div>
+        <a href="#" class="header__logo">
+          <img
+            src="./images/white-logo.png"
+            alt="212Gym logo"
+            class="logo"
+          />212Gym</a
+        >
+        <nav aria-label="Main navigation" class="navigation">
+          <p class="navigation__title">Explore 212Gym</p>
+          <ul class="header__nav">
+            <li><a href="#about" class="link">About</a></li>
+            <li><a href="#features" class="link">Features</a></li>
+            <li><a href="#pricing" class="link">Pricing</a></li>
+
+            <li><a href="#help" class="link">Join Now</a></li>
+          </ul>
+        </nav>
+        <div class="header__socials">
+          <a href="https://www.facebook.com/212Gym/" target="_blank"
+            ><img src="./images/Facebook.png" alt="Facebook logo"
+          /></a>
+
+          <a href="https://www.instagram.com/212_gym/" target="_blank"
+            ><img src="./images/Instagram.png" alt="Instagram logo"
+          /></a>
+        </div>
+      </header>
+
+      <main class="main">
+        <section id="about" class="hero widthed-section">
+          <div>
+            <h1 class="hero__title">
+              Build Your Strongest Version at
+              <strong class="highlight">212Gym.</strong>
+            </h1>
+
+            <p class="text-max-width text hero__text">
+              Train in a modern and motivating environment with professional
+              equipment, flexible membership plans, and everything you need to
+              reach your fitness goals at
+              <strong class="highlight hero__highlight">212Gym.</strong>
+            </p>
+
+            <a class="cta-button hero__button" href="#contact">Join Now</a>
+          </div>
+
+          <img
+            src="./images/hero.jpg"
+            alt="212Gym fitness illustration"
+            class="image hero__image"
+          />
+        </section>
+
+        <section class="features widthed-sections" id="features">
+          <img
+            class="features__img"
+            src="./images/features.jpg"
+            alt="212Gym training illustration"
+          />
+          <div class="features__content">
+            <h2 class="sub-heading features__heading">
+              Everything You Need for Your Fitness Journey
+            </h2>
+
+            <p class="text features__text">
+              Train in a motivating environment with modern equipment and
+              flexible membership plans designed to help you achieve your
+              fitness goals.
+            </p>
+
+            <ul class="features__list">
+              <li class="features__feature item">Modern training equipment.</li>
+
+              <li class="features__feature item">
+                Professional and supportive coaches.
+              </li>
+
+              <li class="features__feature item">Flexible membership plans.</li>
+
+              <li class="features__feature item">
+                Clean and comfortable workout environment.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+          <h2 class="sub-heading">Membership Plans</h2>
+
+          <p class="pricing__text text text-max-width">
+            Choose the membership plan that fits your fitness journey at 212Gym.
+          </p>
+
+          <div class="pricing__plans">
+            <article class="plan">
+              <img
+                class="plan__image"
+                src="./images/Free.png"
+                alt="Free plan illustration"
+              />
+              <h3 class="plan__type">1 Month</h3>
+
+              <ul class="plan__list">
+                <li class="plan__item item">1 Body Analysis Session</li>
+                <li class="plan__item item">Unlimited Sauna & Jacuzzi</li>
+                <li class="plan__item item">2 Invitations</li>
+                <li class="plan__item item">2 P.T Sessions</li>
+              </ul>
+
+              <div class="plan__cta">
+                <p class="plan__price">1100 L.E</p>
+                <button class="plan__button">Join Now</button>
+              </div>
+            </article>
+
+            <article class="plan">
+              <img
+                class="plan__image"
+                src="./images/Standard.png"
+                alt="Standard plan illustration"
+              />
+              <h3 class="plan__type">3 Months + 1</h3>
+
+              <ul class="plan__list">
+                <li class="plan__item item">3 Body Analysis Sessions</li>
+                <li class="plan__item item">Unlimited Sauna & Jacuzzi</li>
+                <li class="plan__item item">4 Invitations</li>
+                <li class="plan__item item">15 Days Freezing</li>
+              </ul>
+
+              <div class="plan__cta">
+                <p class="plan__price">2850 L.E</p>
+                <button class="plan__button">Join Now</button>
+              </div>
+            </article>
+
+            <article class="plan plan--featured">
+              <img
+                class="plan__image"
+                src="./images/Premium.png"
+                alt="Premium plan illustration"
+              />
+              <h3 class="plan__type">1 Year Offer</h3>
+
+              <ul class="plan__list">
+                <li class="plan__item item">12 Body Analysis Sessions</li>
+                <li class="plan__item item">Unlimited Sauna & Jacuzzi</li>
+                <li class="plan__item item">12 Invitations</li>
+                <li class="plan__item item">6 P.T Sessions</li>
+              </ul>
+
+              <div class="plan__cta">
+                <p class="plan__price">
+                  4500 L.E <span class="plan__duration">Promo</span>
+                </p>
+
+                <button class="plan__button">Join Now</button>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="subscribe widthed-section" id="contact">
+          <div class="subscribe__content">
+            <h2 class="sub-heading subscribe__heading">
+              Start Your Fitness Journey Today
+            </h2>
+
+            <p class="text">
+              Contact 212Gym on WhatsApp for memberships, offers, and bookings.
+            </p>
+          </div>
+
+          <button class="cta-button subscribe__button">
+            Contact on WhatsApp
+          </button>
+        </section>
+      </main>
+
+      <footer id="footer" class="footer widthed-section">
+        <p class="footer__copyrights">
+          ©2026 By <strong class="highlight">212Gym</strong>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
